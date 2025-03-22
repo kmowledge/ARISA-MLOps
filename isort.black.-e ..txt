@@ -1,0 +1,6 @@
+black #tego nie ma w moim
+flake8
+isort #tego nie ma w moim
+pip
+python-dotenv
+-e . #tego nie ma w moim

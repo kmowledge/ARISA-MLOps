@@ -7,7 +7,7 @@ name = "ARISA_DSML"
 version = "0.0.1"
 description = "Trying to predict titanic passenger survival"
 authors = [
-  { name = "Cagerskov" },
+  { name = "kml" },
 ]
 
 readme = "README.md"
