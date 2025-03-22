@@ -1,31 +1,61 @@
-# ARISA-MLOps
-## Prerequisites  
-Install python 3.11 with py manager on your local machine.  
-Install Visual Studio Code on your local machine.  
-Create a kaggle account and create a kaggle api key kaggle.json file.  
-Move the kaggle.json to   
-C:\Users\USERNAME\\.kaggle folder for windows,  
-/home/username/.config/kaggle folder for mac or linux.  
-## Local
-Fork repo to your own github account.  
-Clone forked repo to your local machine.  
-Open VS Code and open the repo directory.  
-In the VS Code terminal run the following to create a new python virtual environment:  
-```
-py -3.11 -m venv .venv
-```
-windows
-```
-.\.venv\Scripts\activate
-```
-mac or linux  
-```
-source .venv/bin/activate
-```
-and then open up notebook 02 and attempt to run the cells.  
+# titanic_survival_prediction
 
-## Github Codespaces  
-Fork repo to your own github account.  
-Click the code button, select codespaces tab click create codespace on main.  
-Optionally, after the codespace has finished loading click the blue button on the bottom left and select open in visual studio code.  
-Make sure to turn off the codepace when done, you have a limited amount of free runtime hours.  ''
+<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
+    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
+</a>
+
+trying to do ml ops on titanic project
+
+## Project Organization
+
+```
+├── LICENSE            <- Open-source license if one is chosen
+├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
+├── README.md          <- The top-level README for developers using this project.
+├── data
+│   ├── external       <- Data from third party sources.
+│   ├── interim        <- Intermediate data that has been transformed.
+│   ├── processed      <- The final, canonical data sets for modeling.
+│   └── raw            <- The original, immutable data dump.
+│
+├── docs               <- A default mkdocs project; see www.mkdocs.org for details
+│
+├── models             <- Trained and serialized models, model predictions, or model summaries
+│
+├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+│                         the creator's initials, and a short `-` delimited description, e.g.
+│                         `1.0-jqp-initial-data-exploration`.
+│
+├── pyproject.toml     <- Project configuration file with package metadata for 
+│                         ARISA_DSML and configuration for tools like black
+│
+├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+│
+├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+│   └── figures        <- Generated graphics and figures to be used in reporting
+│
+├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+│                         generated with `pip freeze > requirements.txt`
+│
+├── setup.cfg          <- Configuration file for flake8
+│
+└── ARISA_DSML   <- Source code for use in this project.
+    │
+    ├── __init__.py             <- Makes ARISA_DSML a Python module
+    │
+    ├── config.py               <- Store useful variables and configuration
+    │
+    ├── dataset.py              <- Scripts to download or generate data
+    │
+    ├── features.py             <- Code to create features for modeling
+    │
+    ├── modeling                
+    │   ├── __init__.py 
+    │   ├── predict.py          <- Code to run model inference with trained models          
+    │   └── train.py            <- Code to train models
+    │
+    └── plots.py                <- Code to create visualizations
+```
+
+--------
+
